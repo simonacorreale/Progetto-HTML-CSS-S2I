@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+:root {
+    /* Spaziature (generiche) */
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-28: 28px;
+    --space-32: 32px;
+    --space-36: 36px;
+    --space-40: 40px;
+
+    /* Padding */
+    --padding-8: 8px;
+    --padding-12: 12px;
+    --padding-16: 16px;
+    --padding-20: 20px;
+    --padding-24: 24px;
+    --padding-28: 28px;
+    --padding-32: 32px;
+    --padding-36: 36px;
+    --padding-40: 40px;
+
+    /* Margini */
+    --margin-8: 8px;
+    --margin-12: 12px;
+    --margin-16: 16px;
+    --margin-20: 20px;
+    --margin-24: 24px;
+    --margin-28: 28px;
+    --margin-32: 32px;
+    --margin-36: 36px;
+    --margin-40: 40px;
+
+    /* Specifici per padding-top e padding-bottom */
+    --padding-top-8: 8px;
+    --padding-top-12: 12px;
+    --padding-top-16: 16px;
+    --padding-top-20: 20px;
+    --padding-top-24: 24px;
+    --padding-top-28: 28px;
+    --padding-top-32: 32px;
+    --padding-top-36: 36px;
+    --padding-top-40: 40px;
+
+    --padding-bottom-8: 8px;
+    --padding-bottom-12: 12px;
+    --padding-bottom-16: 16px;
+    --padding-bottom-20: 20px;
+    --padding-bottom-24: 24px;
+    --padding-bottom-28: 28px;
+    --padding-bottom-32: 32px;
+    --padding-bottom-36: 36px;
+    --padding-bottom-40: 40px;
+}
+
+:root {
+    /* Posizionamento Generale */
+    --position: relative;
+    /* Default per tutti gli elementi */
+    --top: 0;
+    /* Posizione top */
+    --right: 0;
+    /* Posizione right */
+    --bottom: 0;
+    /* Posizione bottom */
+    --left: 0;
+    /* Posizione left */
+
+    /* Allineamento orizzontale */
+    --justify-content: flex-start;
+    /* Allineamento orizzontale (default è a sinistra) */
+    --align-items: flex-start;
+    /* Allineamento verticale (default è in alto) */
+    --align-self: auto;
+    /* Allineamento specifico per un elemento */
+
+    /* Spaziatura interna (Padding) */
+    --padding-top: 16px;
+    --padding-right: 16px;
+    --padding-bottom: 16px;
+    --padding-left: 16px;
+
+    /* Spaziatura esterna (Margin) */
+    --margin-top: 16px;
+    --margin-right: 16px;
+    --margin-bottom: 16px;
+    --margin-left: 16px;
+
+    /* Larghezza e Altezza */
+    --width: auto;
+    /* Larghezza dinamica */
+    --height: auto;
+    /* Altezza dinamica */
+    --max-width: 100%;
+    /* Max larghezza */
+    --max-height: 100%;
+    /* Max altezza */
+
+    /* Flexbox */
+    --flex-direction: row;
+    /* Orientamento degli elementi (row o column) */
+    --flex-wrap: nowrap;
+    /* Avvolgimento (wrap o nowrap) */
+    --flex-grow: 0;
+    /* Crescita dell'elemento */
+    --flex-shrink: 1;
+    /* Contrazione dell'elemento */
+    --flex-basis: auto;
+    /* Dimensione base dell'elemento */
+}
+
+/* Media Query per Mobile (da 375px in su)*/
+@media (min-width: 320px) {
+    :root {
+        margin: var(--margin-16);
+    }
+}
+
+/* Media Query per Tablet (>= 768px) */
+@media (min-width: 768px) {
+    :root {
+        margin: var(--margin-16);
+    }
+}
+
+/* Media Query per Desktop (>= 1024px) */
+@media (min-width: 1024px) {
+    :root {
+        margin: var(--margin-40);
+    }
+}
