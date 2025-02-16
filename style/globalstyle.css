@@ -10,6 +10,20 @@
     text-decoration: none;
 }
 
+h1 {
+    font-size: 86px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+:root {
+    /* colori (generici) */
+    --body: #000;
+
+}
+
 :root {
     /* Spaziature (generiche) */
     --space-8: 8px;
@@ -21,6 +35,11 @@
     --space-32: 32px;
     --space-36: 36px;
     --space-40: 40px;
+
+
+    /* Negative space */
+    --margin-remove-top: -240px 0px 0px 0px;
+    --margin-remove-bottom: 0px 0px -40px 0px;
 
     /* Padding */
     --padding-8: 8px;
@@ -43,6 +62,9 @@
     --margin-32: 32px;
     --margin-36: 36px;
     --margin-40: 40px;
+    --margin-cont: 0px 40px 0px 40px;
+    --margin-cont-l: 0px 124px 0px 124px;
+    --margin-cont-l-v: 60px 0px 60px 0px;
 
     /* Specifici per padding-top e padding-bottom */
     --padding-top-8: 8px;
@@ -124,21 +146,21 @@
 
 /* Media Query per Mobile (da 375px in su)*/
 @media (min-width: 320px) {
-    :root {
+    main {
         margin: var(--margin-16);
     }
 }
 
 /* Media Query per Tablet (>= 768px) */
 @media (min-width: 768px) {
-    :root {
+    main {
         margin: var(--margin-16);
     }
 }
 
 /* Media Query per Desktop (>= 1024px) */
 @media (min-width: 1024px) {
-    :root {
-        margin: var(--margin-40);
+    main {
+        margin: var(--margin-cont-l);
     }
 }
