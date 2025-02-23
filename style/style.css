@@ -31,7 +31,7 @@ button {
     border-radius: 20px;
 }
 
-#me_tile:hover {}
+
 
 #top_section {
     display: flex;
@@ -223,4 +223,64 @@ button {
 .scroll-text span {
     display: inline-block;
     animation: scrolling-text 250s linear infinite;
+}
+
+/* button */
+
+.primary-button {
+    position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 500px;
+    width: 250px;
+    height: 48px;
+    overflow: hidden;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    border: 2px solid #3E26A7;
+}
+
+.primary-button .round {
+    border-radius: 50%;
+    background-color: #3E26A7;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+    animation: scale-down 0.2s forwards;
+}
+
+.primary-button.animate .round {
+    animation: scale-up 0.5s forwards;
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(600);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(600);
+    }
+
+    to {
+        ransform: scale(0);
+    }
+}
+
+.button-container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
